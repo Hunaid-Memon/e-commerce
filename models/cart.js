@@ -15,14 +15,6 @@ const Cart = mongoose.Schema({
             required: true
         }
     }],
-    title: {
-        type: String,
-        required: true
-    },
-    quantity: {
-        type: Number,
-        required: true
-    },
     date: {
         type: Date,
         required: true,
@@ -30,4 +22,4 @@ const Cart = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('product', Product);
+module.exports = mongoose.model('cart', Cart);
