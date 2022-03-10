@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken");
 const config = require("config");
-const { modelName } = require("../models/user");
 
 const auth = (req, res, next) => {
     const token = req.header('auth-token');
